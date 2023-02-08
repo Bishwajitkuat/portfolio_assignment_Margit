@@ -19,7 +19,7 @@ header {
   background-image: url("background.jpeg");
   background-size: cover;
   background-attachment: fixed;
-  background-origin: center center;
+  background-origin: content-box;
   background-position: center;
   text-align: center;
   position: relative;
@@ -94,6 +94,28 @@ header {
 }
 .main__article--skills {
   background-color: rgba(137, 43, 226, 0.05);
+}
+.skill_div_parent {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skill_div {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.024rem solid black;
+}
+.skill_div_parent div:nth-child(even) {
+  background-color: gray;
+}
+.fa-brands {
+  font-size: 4rem;
+  color: blue;
 }
 .footer__copyWright {
   background-color: black;
