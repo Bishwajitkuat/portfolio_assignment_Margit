@@ -110,9 +110,9 @@ header {
   border-radius: 0.5rem;
   border: 0.024rem solid black;
 }
-.skill_div_parent div:nth-child(even) {
+/* .skill_div_parent div:nth-child(even) {
   background-color: gray;
-}
+} */
 .fa-brands {
   font-size: 4rem;
   color: blue;
