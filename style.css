@@ -4,57 +4,60 @@
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
-
-.container {
-  background-color: white;
-  color: black;
-  width: 65%;
-  text-align: center;
-  margin: auto;
+body {
+  display: flex;
+  justify-content: center;
 }
 
-header {
-  height: 900px;
-  margin-bottom: 75px;
-  background-image: url("background.jpeg");
+.container {
+  margin-top: 5vh;
+  max-width: 900px;
+  background-color: white;
+  color: white;
+  width: 85vh;
+  background-image: url("img/bgAurora.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-origin: content-box;
   background-position: center;
+}
+
+header {
+  height: 10vh;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   text-align: center;
   position: relative;
   padding: 10px;
 }
 .header__name {
-  padding-top: 75px;
-  margin-bottom: 20px;
   font-size: 2.5rem;
 }
 
 .nav__list {
   display: inline-block;
-  padding: 2px;
-  border: 2px double black;
-  padding: 2px;
-  background-color: rgba(255, 228, 196, 0.1);
+  padding: 0.3rem;
+  background-color: rgba(255, 228, 196, 0.3);
   border-radius: 10%;
 }
 
 .nav__list--link {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  color: black;
+  color: white;
+}
+.hero {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header__greetinngs {
-  font-size: 3rem;
-  margin: auto;
+  font-size: 4rem;
   text-align: center;
-  position: absolute;
-  left: 50%;
-  right: 0%;
-  top: 50%;
-  bottom: 30%;
 }
 .main__article {
   font-size: 1rem;
