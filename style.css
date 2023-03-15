@@ -4,6 +4,7 @@
   font-family: sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   display: flex;
@@ -32,6 +33,7 @@ header {
   text-align: center;
   justify-content: space-around;
   padding: 1rem;
+  transition: background-color 2s;
 }
 .header__name {
   font-size: 2.5rem;
@@ -59,7 +61,6 @@ header {
   width: 100%;
   height: 85vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url("img/bgAurora.jpeg");
@@ -81,19 +82,22 @@ header {
   font-size: 1rem;
   line-height: 1.5;
   text-align: justify;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
   padding: 1rem;
   border-radius: 0.5rem;
+}
+.article__about__content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
 }
 .main__article--heading {
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
 .about__img {
-  width: 200px;
-  float: left;
-  padding-right: 10px;
-  border-radius: 10%;
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
 .skills__img {
@@ -128,7 +132,6 @@ header {
 }
 .project_card:hover {
   transform: scale(1.1);
-  /*   border: 0.01rem solid white; */
   box-shadow: 0 0 17px #6fe740;
 }
 .project_card_anchor {
@@ -162,14 +165,15 @@ header {
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 0 5px #26a00b;
+  box-shadow: 0 0 15px #26a00b;
 }
-.skill_div_parent div:nth-child(even) {
-  background-color: gray;
+.skill_div:nth-child(even) {
+  box-shadow: 0 0 15px #0000ff;
 }
+
 .fa-brands {
   font-size: 4rem;
-  color: blue;
+  color: #0000ff;
 }
 
 /* ######### FOOTER ########## */
@@ -243,4 +247,20 @@ footer {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* **********go to top link******** */
+
+#go_to_top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 0, 0.678);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transform: visibility 2s;
 }

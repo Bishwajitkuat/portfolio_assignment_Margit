@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="container">
       <header>
         <h2 class="header__name">Bishwajit Das</h2>
         <nav class="header__nav">
@@ -79,18 +79,20 @@
         </div>
         <div id="about" class="main__article main__article--about">
           <h3 class="main__article--heading">About</h3>
-          <p class="main__article--text">
+          <div class="article__about__content">
             <img
               src="about.jpeg"
               alt="image of about author"
               class="about__img"
             />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt
-            facere id voluptatum incidunt! Esse, quia. Repudiandae similique
-            molestias fugit nostrum incidunt qui aspernatur obcaecati error,
-            asperiores inventore sed corrupti neque provident corporis? Harum
-            rem ratione culpa libero earum porro, nobis quod modi maxime
-          </p>
+            <p class="main__article--text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt
+              facere id voluptatum incidunt! Esse, quia. Repudiandae similique
+              molestias fugit nostrum incidunt qui aspernatur obcaecati error,
+              asperiores inventore sed corrupti neque provident corporis? Harum
+              rem ratione culpa libero earum porro, nobis quod modi maxime
+            </p>
+          </div>
         </div>
         <div id="skills" class="main__article main__article--skills">
           <h3 class="main__article--heading">Skills</h3>
@@ -142,6 +144,7 @@
         </div>
       </footer>
     </div>
+    <a href="#container" id="go_to_top">Top</a>
     <script
       src="https://kit.fontawesome.com/6833e40682.js"
       crossorigin="anonymous"
