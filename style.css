@@ -13,8 +13,6 @@ body {
 }
 
 .container {
-  /* margin-top: 5vh; */
-  /* max-width: 1200px; */
   color: white;
   width: 100vw;
   padding: 2rem;
@@ -34,7 +32,12 @@ header {
   justify-content: space-around;
   padding: 1rem;
   transition: background-color 2s;
+  z-index: 1;
 }
+#burger_btn {
+  display: none;
+}
+
 .header__name {
   font-size: 2.5rem;
   text-shadow: -0.2rem -0.01rem rgba(172, 255, 47, 0.356);
@@ -83,7 +86,7 @@ header {
   line-height: 1.5;
   text-align: justify;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 0.5rem;
 }
 .article__about__content {
@@ -195,10 +198,18 @@ footer {
   gap: 1rem;
   align-items: center;
 }
+.contact_form div {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
 .contact_form label {
   display: inline-block;
-  width: 150px;
+  width: 10rem;
+  margin-bottom: 0.25rem;
 }
+
 .contact_form button {
   padding: 0.5rem;
 }
@@ -263,4 +274,56 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
   transform: visibility 2s;
+}
+
+@media (max-width: 640px) {
+  .container {
+    min-width: 300px;
+  }
+  #burger_btn {
+    display: flex;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    transition: 1s;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  header h2 {
+    align-self: flex-start;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+  }
+  .project_cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .contact_form div {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.05rem;
+  }
+  .contact_form label {
+    width: 100%;
+  }
+  .header__name {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+}
+.hide {
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
 }
