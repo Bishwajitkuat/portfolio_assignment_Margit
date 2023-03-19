@@ -34,6 +34,7 @@ header {
   gap: 3rem;
   text-align: center;
   justify-content: space-around;
+  align-items: center;
   padding: 1rem;
   transition: background-color 2s;
   z-index: 1;
@@ -113,4 +114,16 @@ div {
 }
 .i {
   grid-area: i;
+}
+@media (max-width: 640px) {
+  .header__name {
+    font-size: 1rem;
+    text-shadow: -1px -1px rgba(172, 255, 47, 0.356);
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .nav__list--link {
+    font-size: 1rem;
+  }
 }

@@ -14,5 +14,4 @@ window.addEventListener("scroll", () => {
 });
 burgerBtn.addEventListener("click", () => {
   headerNav.classList.toggle("hide");
-  console.log("hi");
 });

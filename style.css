@@ -37,6 +37,7 @@ header {
   gap: 3rem;
   text-align: center;
   justify-content: space-around;
+  align-items: center;
   padding: 1rem;
   transition: background-color 2s;
   z-index: 1;
@@ -207,7 +208,6 @@ footer {
 .contact_form button {
   padding: 0.5rem;
 }
-
 .footer__copyWright--text {
   font-style: italic;
   font-size: 0.75rem;
@@ -264,7 +264,8 @@ footer {
   color: var(--font-color-black);
   font-size: 1.2rem;
   font-weight: bold;
-  transform: visibility 2s;
+  visibility: hidden;
+  transition: visibility 3s;
 }
 
 @media (max-width: 640px) {
